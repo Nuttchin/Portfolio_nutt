@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Showcase & Design Case Studies - NUTT CHIN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navtabbar">
+        <div class="nav-brand"><a href="index.html" style="color: inherit;">NUTT CHIN</a></div>
+        <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html#home">HOME</a></li>
+            <li><a href="index.html#artwork3d">3D ARTWORK & ARTWORK GALLERY</a></li>
+            <li><a href="index.html#gameproject" class="active-link">GAME PROJECTS</a></li>
+            <li><a href="index.html#content-creator">ABOUT</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Back to Projects Bar -->
+    <div class="back-bar-container">
+        <a href="index.html#gameproject" class="back-to-portfolio-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+            BACK TO GAME PROJECTS
+        </a>
+    </div>
+
+    <!-- Game Showcase Hero Banner -->
+    <header class="game-hero-banner" style="background-image: url('pic/IsometricRoom.png');">
+        <div class="game-hero-banner-overlay"></div>
+        <div class="game-hero-overlay-content">
+            <span class="game-role-badge">GAME DESIGN & 3D ART CASE STUDIES</span>
+            <h1 class="game-title-main">GAME PROJECT DEEP DIVES</h1>
+            <div class="game-year-range">SELECT A GAME CASE STUDY BELOW</div>
+        </div>
+    </header>
+
+    <!-- Metadata Specs Pill Bar / Quick Game Switcher -->
+    <div class="game-meta-specs-container">
+        <div class="game-meta-specs-grid">
+            <a href="game-rocket-diff.html" style="text-decoration: none; color: inherit;" class="spec-item">
+                <span class="spec-label">Game 01</span>
+                <span class="spec-value" style="color: var(--accent);">Rocket Diff →</span>
+            </a>
+            <a href="game-square-clicker.html" style="text-decoration: none; color: inherit;" class="spec-item">
+                <span class="spec-label">Game 02</span>
+                <span class="spec-value" style="color: var(--accent);">BABY MAYBE CRY →</span>
+            </a>
+            <div class="spec-item" style="cursor: default;">
+                <span class="spec-label">Game 03 (COMING SOON)</span>
+                <span class="spec-value" style="color: #fbbf24;">FISHHHHHH!</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area with 3 Project Cards -->
+    <main class="detail-content-area">
+        <section class="deepdive-section">
+            <div class="deepdive-container">
+                <div class="deepdive-header">
+                    <div class="deepdive-title-group">
+                        <span class="deepdive-subtitle">FEATURED CASE STUDIES</span>
+                        <h2 class="deepdive-title">สำรวจรายละเอียดเกมเฉพาะแต่ละเกม</h2>
+                    </div>
+                </div>
+
+                <div class="deepdive-text">
+                    <p>
+                        คลิกเลือกหน้าข้อมูลเกมด้านล่างเพื่อเข้าสู่หน้ารายละเอียดเชิงลึก ซึ่งรวบรวมข้อมูลครบทั้ง <strong>ภาพรวมโปรเจกต์ (Overview)</strong>, <strong>ระบบการออกแบบเกม (Game Design)</strong>, และ <strong>แกลเลอรีภาพผลงาน (Gallery)</strong>:
+                    </p>
+                </div>
+
+                <div class="tech-cards-grid" style="margin-top: 2rem;">
+                    <!-- Card 1 -->
+                    <div class="tech-feature-card">
+                        <div class="deepdive-media-card" style="margin-bottom: 1.2rem;">
+                            <img src="pic/rocket.PNG" alt="Rocket Diff Thumbnail">
+                        </div>
+                        <span class="spec-label">Unity 2D & C#</span>
+                        <h3 class="tech-card-title" style="margin: 0.4rem 0;">Rocket Diff</h3>
+                        <p class="tech-card-desc">
+                            ระบบฟิสิกส์แรงโน้มถ่วง, การควบคุมไอพ่นคู่, การสร้างโมเดลชิ้นส่วนยาน และการจัดวางฉากอวกาศ Parallax 3 ชั้น
+                        </p>
+                        <div style="display: flex; gap: 0.6rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <a href="game-rocket-diff.html" class="game-case-study-btn" style="flex: 1; justify-content: center; margin-top: 0; min-width: 130px;">
+                                เข้าสู่หน้าข้อมูลเกม <span class="btn-arrow">→</span>
+                            </a>
+                            <a href="https://canva.link/5gar987hmpvnic4" target="_blank" rel="noopener noreferrer" class="game-case-study-btn" style="flex: 1; justify-content: center; margin-top: 0; min-width: 130px; background: linear-gradient(135deg, #00c4cc 0%, #7d2ae8 100%); box-shadow: 0 6px 20px rgba(125, 42, 232, 0.35);">
+                                ดู Documents (Canva) <span class="btn-arrow">↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="tech-feature-card">
+                        <div class="deepdive-media-card" style="margin-bottom: 1.2rem;">
+                            <img src="PIC%20BABY/ROOM%201.png" alt="Baby Maybe Cry Thumbnail">
+                        </div>
+                        <span class="spec-label">PC • Horror / Strategy / Survival</span>
+                        <h3 class="tech-card-title" style="margin: 0.4rem 0;">BABY MAYBE CRY</h3>
+                        <p class="tech-card-desc">
+                            ผจญภัยในบ้านผีสิงปริศนา, ออกสำรวจ ค้นหาห้องเป้าหมาย ขนย้ายสิ่งของตามเงื่อนไข, วางแผนล็อกห้อง และเอาชีวิตรอดจากปีศาจวัยเด็ก
+                        </p>
+                        <div style="display: flex; gap: 0.6rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <a href="game-square-clicker.html" class="game-case-study-btn" style="flex: 1; justify-content: center; margin-top: 0; min-width: 140px;">
+                                เข้าสู่หน้าข้อมูลเกม <span class="btn-arrow">→</span>
+                            </a>
+                            <a href="https://www.canva.com/design/DAG5h5H7078/9ihpSSWuqfX7LWniyg45Aw/edit" target="_blank" rel="noopener noreferrer" class="game-case-study-btn" style="flex: 1; justify-content: center; margin-top: 0; min-width: 140px; background: linear-gradient(135deg, #00c4cc 0%, #7d2ae8 100%); box-shadow: 0 6px 20px rgba(125, 42, 232, 0.35);">
+                                ดู GDD (Canva) <span class="btn-arrow">↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="tech-feature-card">
+                        <div class="deepdive-media-card" style="margin-bottom: 1.2rem;">
+                            <img src="PIC%20FISHHHHHH!/banner1.png" alt="FISHHHHHH! Banner">
+                        </div>
+                        <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.4rem; flex-wrap: wrap;">
+                            <span class="spec-label" style="margin-bottom: 0;">Game Concept & Storytelling</span>
+                            <span class="game-dev-pill" style="font-size: 0.68rem; padding: 0.2rem 0.6rem;"><span class="pulse-dot"></span> COMING SOON</span>
+                        </div>
+                        <h3 class="tech-card-title" style="margin: 0.4rem 0;">FISHHHHHH!</h3>
+                        <p class="tech-card-desc">
+                            หลังเกิดระเบิดนิวเคลียร์ โลกของเราก็ผ่านไป 248 ปีโลกเราก็เกิดระบบนิเวศใหม่ๆ และสภาพแวดล้อมดูเหนือจินตนาการก็ปรากฏขึ้น มีการเปลี่ยนแปลงของสิ่งมีชีวิต มนุษย์ได้ส่งหุ่นยนต์ออกสำรวจ จับสิ่งมีชีวิตทางน้ำกลับไปเพื่อกลับไปวิจัย แม้จะเจอกับอันตรายต่างๆ ก็ตาม เราก็ต้องทำภารกิจให้สำเร็จให้ได้
+                        </p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://canva.link/b7a7tm4s97tld6i" target="_blank" rel="noopener noreferrer"
+                                class="game-case-study-btn"
+                                style="background: linear-gradient(135deg, #00c4cc 0%, #7d2ae8 100%); box-shadow: 0 6px 20px rgba(125, 42, 232, 0.35); font-size: 0.85rem; padding: 0.45rem 1.1rem; display: inline-flex;">
+                                GDD (Canva) <span class="btn-arrow">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer & Contact Section -->
+    <footer class="contact-container" id="contact">
+        <h3 class="section-title">CONNECT WITH ME</h3>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Interested in collaborating or hiring for 3D Art & Game Design?</p>
+
+        <div class="contact-button-container">
+            <a href="mailto:nutt2546@hotmail.com" class="contact-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg>
+                <div class="contact-text">
+                    <strong>Email</strong>
+                    <span>nutt2546@hotmail.com</span>
+                </div>
+            </a>
+            <a href="index.html#gameproject" class="contact-button">
+                <div class="contact-text">
+                    <strong>Portfolio Home</strong>
+                    <span>Back to main showcase</span>
+                </div>
+            </a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">© 2025 Nutt Chinsakonthanagorn • 3D Artist & Game Designer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

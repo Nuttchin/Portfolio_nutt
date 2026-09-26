@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Drift - Game Design & Development Case Study | NUTT CHIN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navtabbar">
+        <div class="nav-brand"><a href="index.html" style="color: inherit;">NUTT CHIN</a></div>
+        <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html#home">HOME</a></li>
+            <li><a href="index.html#artwork3d">3D ARTWORK & ARTWORK GALLERY</a></li>
+            <li><a href="index.html#gameproject" class="active-link">GAME PROJECTS</a></li>
+            <li><a href="index.html#content-creator">ABOUT</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Back to Projects Bar -->
+    <div class="back-bar-container">
+        <a href="index.html#gameproject" class="back-to-portfolio-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+            BACK TO GAME PROJECTS
+        </a>
+    </div>
+
+    <!-- Game Showcase Hero Banner -->
+    <header class="game-hero-banner" style="background-image: url('pic/rocket.PNG');">
+        <div class="game-hero-banner-overlay"></div>
+        <div class="game-hero-overlay-content">
+            <h1 class="game-title-main">ROCKET DRIFT</h1>
+            <div class="game-year-range">ARCADE / RELAX / SURVIVAL</div>
+            <div
+                style="display: flex; gap: 0.8rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 1rem;">
+                <a href="#video-preview" id="hero-watch-video-btn"
+                    class="game-hero-play-btn"
+                    style="background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%); margin-top: 0; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45); display: inline-flex; align-items: center; gap: 0.55rem;">
+                    ▶ ดูตัวอย่างเกม (PREVIEW)
+                </a>
+                <a href="https://canva.link/5gar987hmpvnic4" target="_blank" rel="noopener noreferrer"
+                    class="game-hero-gdd-btn" style="margin-top: 0;">
+                    📄 VIEW DOCUMENTS (CANVA) ↗
+                </a>
+                <a href="https://github.com/Nuttchin/Rocket_Drift.git" target="_blank" rel="noopener noreferrer"
+                    class="game-hero-play-btn"
+                    style="background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); margin-top: 0; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);">
+                    GITHUB REPOSITORY ↗
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Navigation Bar -->
+    <nav class="game-page-subnav" aria-label="Project Sub Navigation">
+        <div class="subnav-container">
+            <ul class="subnav-links">
+                <li><a href="#overview" class="active">OVERVIEW</a></li>
+                <li><a href="#video-preview">GAMEPLAY VIDEO</a></li>
+                <li><a href="#game-design">GAME DESIGN</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Deep Dive Main Content Area -->
+    <main class="detail-content-area">
+
+        <!-- ================= SECTION 1: OVERVIEW ================= -->
+        <section class="deepdive-section" id="overview">
+            <div class="deepdive-container">
+                <div class="deepdive-header">
+                    <div class="deepdive-title-group">
+                        <span class="deepdive-subtitle">PROJECT SUMMARY & STORY</span>
+                        <h2 class="deepdive-title">Overview</h2>
+                    </div>
+                </div>
+
+                <div class="deepdive-grid">
+                    <div class="deepdive-text">
+                        <p>
+                            <strong>Game Vision:</strong> นำทางและกอบกู้ฝูงจรวดที่หลงทางในอวกาศ
+                            พร้อมเอาชีวิตรอดจากดงอุกกาบาตและสิ่งมีชีวิตลึกลับแห่งห้วงอวกาศ
+                        </p>
+
+                        <p>
+                            <strong>Concept & Story:</strong>
+                            ผู้เล่นจะได้รับบทเป็นผู้บังคับการจรวดท่องไปในแผนที่อวกาศเปิดกว้าง
+                            เป้าหมายคือการรวบรวมและนำทางจรวดลำอื่น ที่สูญเสียการควบคุมให้อยู่รอดได้นานที่สุด
+                            เพราะยิ่งเวลาผ่านไปนานเท่าไหร่ อุกกาบาต ดาวเคราะห์
+                            และสิ่งกีดขวางก็จะยิ่งปรากฏตัวมากขึ้นและพุ่งเข้าหาด้วยความเร็วสูง
+                            พร้อมทั้งต้องเผชิญหน้ากับบอสสิ่งมีชีวิตลึกลับคอยกลืนกินและขัดขวางการเดินทาง
+                        </p>
+
+                        <p>
+                            <strong>Core Objective:</strong> ผู้เล่นต้องบังคับจรวดหลบหลีกอุปสรรค เก็บกู้จรวดผู้ติดตาม
+                            หลอกล่อบอสให้พุ่งชนดาวเคราะห์เพื่อทำดาเมจ และเอาชีวิตรอดสะสมขบวนจรวดให้ได้มากที่สุด
+                        </p>
+
+                        <p>
+                            <strong>Aesthetic Pillars:</strong>
+                        </p>
+
+
+                        <div class="detail-callout" style="margin-top: 1.5rem; margin-bottom: 0;">
+                            <strong>Project Summary</strong>
+                            <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+                                <li><strong>Game Title:</strong> Rocket Drift</li>
+                                <li><strong>Genre:</strong> Arcade / Relax / Survival</li>
+                                <li><strong>Platform:</strong> Android (Mobile) </li>
+                                <li><strong>Engine:</strong> Unity 2D & C#</li>
+                                <li><strong>Game Documents:</strong> <a href="https://canva.link/5gar987hmpvnic4"
+                                        target="_blank" rel="noopener noreferrer"
+                                        style="color: #c084fc; text-decoration: underline; font-weight: 600;">ROCKET DRIFT Documents (Canva) ↗</a></li>
+                                <li><strong>Monetization:</strong> Rewarded Ads ดูโฆษณาเพื่อฟื้นคืนชีพและคลียร์อุปสรรค
+                                </li>
+                                <li><strong>GitHub:</strong> <a href="https://github.com/Nuttchin/Rocket_Drift.git"
+                                        target="_blank" rel="noopener noreferrer"
+                                        style="color: #38bdf8; text-decoration: underline; font-weight: 600;">github.com/Nuttchin/Rocket_Drift
+                                        ↗</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="deepdive-media-col">
+                        <div class="deepdive-media-card">
+                            <img src="PIC%20ROCKET/Screenshot%202026-09-26%20051849.png" alt="Rocket Drift In-Game Cockpit and UI Interface">
+                        </div>
+                        <div class="deepdive-media-card">
+                            <img src="PIC%20ROCKET/Screenshot%202026-09-26%20051916.png"
+                                alt="Rocket Drift Flight and Steering Action">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION: GAMEPLAY VIDEO PREVIEW ================= -->
+        <section class="deepdive-section" id="video-preview" style="background: rgba(15, 23, 42, 0.45); border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding: 4.5rem 0;">
+            <div class="deepdive-container">
+                <div class="deepdive-header">
+                    <div class="deepdive-title-group">
+                        <span class="deepdive-subtitle">GAMEPLAY & CONTROLS DEMO</span>
+                        <h2 class="deepdive-title">Gameplay Video Preview</h2>
+                    </div>
+                </div>
+
+                <div style="max-width: 960px; margin: 0 auto;">
+                    <div class="video-player-wrapper" style="position: relative; border-radius: var(--radius-md); overflow: hidden; background: #000; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 35px rgba(56, 189, 248, 0.25); border: 1px solid rgba(56, 189, 248, 0.4);">
+                        <video id="rocket-gameplay-video" controls playsinline preload="metadata" poster="PIC%20ROCKET/Screenshot%202026-09-26%20052150.png" style="width: 100%; aspect-ratio: 16/9; display: block; object-fit: contain; background: #0b0f19;">
+                            <source src="PIC%20ROCKET/rocket-preview.mp4" type="video/mp4">
+                            <source src="PIC%20ROCKET/NOVA_FOR_LEB2%20-%20main_menu%20-%20Android%20-%20Unity%202022.3.40f1%20_DX11_%202025-05-30%2020-29-04%20(online-video-cutter.com).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.2rem; padding: 0 0.4rem;">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+                            <span class="game-dev-pill" style="font-size: 0.75rem; padding: 0.28rem 0.8rem; color: #38bdf8; background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.35);">
+                                🎮 LIVE GAMEPLAY CAPTURE
+                            </span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">Android Unity 2D Build • Touch & Steer Mechanics</span>
+                        </div>
+                        <button type="button" id="fullscreen-video-btn" class="game-case-study-btn" style="margin-top: 0; padding: 0.55rem 1.2rem; font-size: 0.85rem; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.2); cursor: pointer;">
+                            ⛶ ขยายเต็มจอ (Full Screen)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 2: GAME DESIGN ================= -->
+        <section class="deepdive-section" id="game-design">
+            <div class="deepdive-container">
+                <div class="deepdive-header">
+                    <div class="deepdive-title-group">
+                        <span class="deepdive-subtitle">SYSTEMS & MECHANICS</span>
+                        <h2 class="deepdive-title">Game Design</h2>
+                    </div>
+                </div>
+
+                <!-- Documents Link Button -->
+                <div style="margin-bottom: 2.2rem;">
+                    <a href="https://canva.link/5gar987hmpvnic4" target="_blank" rel="noopener noreferrer" class="game-hero-gdd-btn" style="margin-top: 0;">
+                        Documents <span class="btn-arrow">↗</span>
+                    </a>
+                </div>
+
+                <!-- Core Loop Header & Process Flow -->
+                <h3
+                    style="color: var(--accent); font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 1.2rem; letter-spacing: 1px;">
+                    CORE LOOP
+                </h3>
+
+                <div class="process-steps-container">
+                    <div class="process-step-item">
+                        <div class="process-step-num">1</div>
+                        <div class="process-step-content">
+                            <h4 class="process-step-title">STEER & DRIFT</h4>
+                            <p class="process-step-desc">
+                                ใช้นิ้วลากบนหน้าจอ (Touch)
+                                หรือเมาส์เพื่อบังคับทิศทางการบินของยานจรวดหลักอย่างอิสระและนุ่มนวลในแผนที่อวกาศเปิดกว้าง
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-item">
+                        <div class="process-step-num">2</div>
+                        <div class="process-step-content">
+                            <h4 class="process-step-title">RESCUE FOLLOWERS</h4>
+                            <p class="process-step-desc">
+                                ตามหาและบินเข้าชนจรวดที่สูญเสียการควบคุมซึ่งลอยเคว้งคว้างอยู่ในอวกาศ
+                                เพื่อนำเข้าสู่ขบวนแถวผู้ติดตาม ยิ่งสะสมได้มาก ยิ่งเพิ่มคะแนนและขบวนยานยาวขึ้น
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-item">
+                        <div class="process-step-num">3</div>
+                        <div class="process-step-content">
+                            <h4 class="process-step-title">EVADE HAZARDS & LURE BOSSES</h4>
+                            <p class="process-step-desc">
+                                คอยหลบหลีกดาวเคราะห์และอุกกาบาตที่พุ่งไล่ตาม และหลอกให้ Mini Boss และ Big Boss
+                                พุ่งชนกับดาวเคราะห์ (Planet) เพื่อสร้างดาเมจกำจัดบอส
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-item">
+                        <div class="process-step-num">4</div>
+                        <div class="process-step-content">
+                            <h4 class="process-step-title">BOOST & REWARDED REVIVE</h4>
+                            <p class="process-step-desc">
+                                Double Tap เพื่อเปิดใช้ไอพ่น Boost พุ่งหนีง หรือหากพลาดท่า
+                                สามารถชมโฆษณาเพื่อฟื้นคืนชีพและเคลียร์อุปสรรครอบตัว
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Systems & Mechanics Grid -->
+                <h3
+                    style="color: var(--accent); font-family: var(--font-heading); font-size: 1.15rem; margin-top: 3.5rem; margin-bottom: 1.2rem; letter-spacing: 1px;">
+                    CORE SYSTEMS & ARCHITECTURE
+                </h3>
+
+                <div class="tech-cards-grid">
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">1. Touch Drag & Boost System</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            ควบคุมยานหลักผ่านการลากนิ้วบนจอ พร้อมระบบเร่งความเร็ว ที่พุ่งได้นาน 2 วินาที มีคูลดาวน์ 15
+                            วินาที
+                        </p>
+                    </div>
+
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">2. Follower Queue System</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            ระบบขบวนยานผู้ติดตามที่ใช้ Queue บันทึกประวัติตำแหน่งพิกัดย้อนหลัง
+                    </div>
+
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">3. (Planet & Meteor)</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            <strong>Planet:</strong>
+                            อุปสรรคขนาดใหญ่ที่คอยขัดขวางเส้นทางและเป็นเป้าหมายสำหรับล่อบอสไปชน<br>
+                            <strong>Meteor:</strong>
+                            อุกกาบาตที่จะเริ่มล็อกเป้าและไล่ล่าผู้เล่นทันทีเมื่อเข้าสู่รัศมีการตรวจจับ
+                        </p>
+                    </div>
+
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">4. Boss Battles & Luring Mechanic</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            <strong>Mini Boss :</strong> วาร์ปหนีเมื่อเลือดต่ำกว่า 50% กำจัดแล้วดรอปจรวด<br>
+                            <strong>Big Boss :</strong> วาร์ปเข้าหาผู้เล่นเพื่อลดระยะ เคลื่อนที่เร็วกว่า
+                            และเมื่อกำจัดได้จะดรอปจรวด Follower ให้ทันที 10 - 20 ลำแบบสุ่ม
+                        </p>
+                    </div>
+
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">5. Dynamic Viewport Spawners</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            ObjectSpawner, EnemySpawner, BossSpawner, FollowerSpawner เพื่อสุ่มเกิดวัตถุและศัตรู
+                        </p>
+                    </div>
+
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">6. Parallax & Star Manager</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            ฉากหลังอวกาศแบบ Parallax เคลื่อนที่ตามผู้เล่น
+                    </div>
+
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">7. Unity Ads & Revive System</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            ร Unity Ads SDK ในรูปแบบ Rewarded Ads เมื่อ Game Over จะมีปุ่ม "Continue"
+                            ให้รับชมโฆษณาเพื่อฟื้นคืนชีพ พร้อมเคลียร์ศัตรูและอุปสรรครอบตัว
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Technical Problem Solving & Lessons Learned -->
+                <h3
+                    style="color: var(--accent); font-family: var(--font-heading); font-size: 1.15rem; margin-top: 3.5rem; margin-bottom: 1.2rem; letter-spacing: 1px;">
+                    DEVELOPMENT PROBLEM SOLVING
+                </h3>
+
+                <div class="tech-cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">ปัญหา 3D Effect ในเกม 2D</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            <strong>ปัญหา:</strong> Effect 3D
+                            ที่นำเข้ามาไม่สามารถหมุนตามทิศทางหัวยานได้เนื่องจากถูกล็อกแกนตั้งไว้<br>
+                            <strong>วิธีแก้:</strong> ปรับเปลี่ยนไปใช้ระบบ Particle 2D ที่สร้างและหมุนแกน Z
+                            ได้อย่างอิสระตามองศาของยาน
+                        </p>
+                    </div>
+
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">ตัวละครกระตุกเวลาหมุนเลี้ยว</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            <strong>ปัญหา:</strong> การหมุนตัวละครตามการลากนิ้วเกิดอาการกระตุกหรือไม่ต่อเนื่อง<br>
+                            <strong>วิธีแก้:</strong> ปรับการตั้งค่าการจำลองการเคลื่อนที่ใน Rigidbody2D และใช้การคำนวณ
+                            Quaternion Slerp / Lerp เพื่อการหมุนที่ลื่นไหล
+                        </p>
+                    </div>
+
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">สภาวะไร้แรงโน้มถ่วงในอวกาศ</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            <strong>ปัญหา:</strong>
+                            ตัวละครและอุกกาบาตตกลงสู่ด้านล่างเนื่องจากลืมรีเซ็ตแรงดึงดูดของโลก<br>
+                            <strong>วิธีแก้:</strong> ตั้งค่า <code>Gravity Scale = 0</code> ใน Rigidbody2D ของทุกวัตถุ
+                            เพื่อให้ลอยตัวและเคลื่อนที่ตามแรงเฉื่อยในอวกาศอย่างแท้จริง
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= SECTION 3: GALLERY ================= -->
+        <section class="deepdive-section" id="gallery">
+            <div class="deepdive-container">
+                <div class="deepdive-header">
+                    <div class="deepdive-title-group">
+                        <span class="deepdive-subtitle">VISUAL SHOWCASE</span>
+                        <h2 class="deepdive-title">GALLERY</h2>
+                    </div>
+                </div>
+
+                <!-- Pure Image Grid with Valid New Screenshots -->
+                <div class="tech-cards-grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20ROCKET/Screenshot%202026-09-26%20051849.png" alt="Rocket Drift In-Game Cockpit and UI Interface" loading="lazy">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20ROCKET/Screenshot%202026-09-26%20051916.png" alt="Rocket Drift Flight and Steering Action" loading="lazy">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20ROCKET/Screenshot%202026-09-26%20052150.png" alt="Rocket Drift Rescue Escort Queue and Followers" loading="lazy">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20ROCKET/Screenshot%202026-09-26%20052219.png" alt="Rocket Drift Hazard Dodge and Asteroid Proximity" loading="lazy">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20ROCKET/Screenshot%202026-09-26%20052244.png" alt="Rocket Drift Dense Meteor Field Encounter" loading="lazy">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20ROCKET/rocket.PNG" alt="Rocket Drift Key Visual Artwork" loading="lazy">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20ROCKET/GAMEDESIGN/ROCKET%20MENU.png" alt="Rocket Drift Continue, Retry, and Score Menu UI" loading="lazy">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20ROCKET/GAMEDESIGN/ROCKET1.png" alt="Rocket Drift Player Core Spacecraft Asset" loading="lazy">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20ROCKET/GAMEDESIGN/อุกาบาท1.png" alt="Rocket Drift Crystal Planet Hazard Asset" loading="lazy">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20ROCKET/GAMEDESIGN/อุกาบาท2.png" alt="Rocket Drift Flaming Meteor Hazard Asset" loading="lazy">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="pic/rocket.PNG" alt="Rocket Drift Space Field Screenshot" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Project Next / Previous Navigation Bar -->
+    <aside class="project-nav-bar" aria-label="Game Project Navigation">
+        <a href="index.html#gameproject" class="project-nav-link prev-link">
+            <div class="nav-arrow">←</div>
+            <div class="nav-link-meta">
+                <span class="nav-link-label">Coming Soon</span>
+                <span class="nav-link-title">FISHHHHHH!</span>
+            </div>
+        </a>
+        <a href="game-square-clicker.html" class="project-nav-link next-link">
+            <div class="nav-arrow">→</div>
+            <div class="nav-link-meta">
+                <span class="nav-link-label">Next Game</span>
+                <span class="nav-link-title">BABY MAYBE CRY</span>
+            </div>
+        </a>
+    </aside>
+
+    <!-- Footer & Contact Section -->
+    <footer class="contact-container" id="contact">
+        <h3 class="section-title">CONNECT WITH ME</h3>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Interested in collaborating or hiring for 3D Art & Game Design?</p>
+
+        <div class="contact-button-container">
+            <a href="mailto:nutt2546@hotmail.com" class="contact-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                </svg>
+                <div class="contact-text">
+                    <strong>Email</strong>
+                    <span>nutt2546@hotmail.com</span>
+                </div>
+            </a>
+            <a href="index.html#gameproject" class="contact-button">
+                <div class="contact-text">
+                    <strong>All Game Projects</strong>
+                    <span>Back to Portfolio Showcase</span>
+                </div>
+            </a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">© 2025 Nutt Chinsakonthanagorn • 3D
+            Artist & Game Designer</p>
+    </footer>
+
+    <!-- Lightbox Video / Image Modal -->
+    <div class="modal-overlay" id="lightbox-modal">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modal-close">&times;</button>
+            <div class="modal-media-wrapper" id="modal-media"></div>
+            <div class="modal-body">
+                <span class="modal-category-tag" id="modal-category">GAME DEMO</span>
+                <h2 class="modal-title" id="modal-title">Project Video</h2>
+                <p class="modal-description" id="modal-description">Video breakdown</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const video = document.getElementById('rocket-gameplay-video');
+            const watchBtn = document.getElementById('hero-watch-video-btn');
+            const fsBtn = document.getElementById('fullscreen-video-btn');
+
+            if (watchBtn && video) {
+                watchBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = document.getElementById('video-preview');
+                    if (target) {
+                        const nav = document.querySelector('.navtabbar');
+                        const navHeight = nav ? nav.offsetHeight : 0;
+                        const subnav = document.querySelector('.game-page-subnav');
+                        const subnavHeight = subnav ? subnav.offsetHeight : 0;
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - (navHeight + subnavHeight) + 10;
+                        window.scrollTo({ top, behavior: 'smooth' });
+                        setTimeout(() => {
+                            video.play().catch(() => {});
+                        }, 500);
+                    }
+                });
+            }
+
+            if (fsBtn && video) {
+                fsBtn.addEventListener('click', () => {
+                    if (video.requestFullscreen) {
+                        video.requestFullscreen();
+                    } else if (video.webkitRequestFullscreen) {
+                        video.webkitRequestFullscreen();
+                    } else if (video.msRequestFullscreen) {
+                        video.msRequestFullscreen();
+                    }
+                    video.play().catch(() => {});
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

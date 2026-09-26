@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABY MAYBE CRY - Game Design & 3D Environment Case Study | NUTT CHIN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navtabbar">
+        <div class="nav-brand"><a href="index.html" style="color: inherit;">NUTT CHIN</a></div>
+        <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html#home">HOME</a></li>
+            <li><a href="index.html#artwork3d">3D ARTWORK & ARTWORK GALLERY</a></li>
+            <li><a href="index.html#gameproject" class="active-link">GAME PROJECTS</a></li>
+            <li><a href="index.html#content-creator">ABOUT</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Back to Projects Bar -->
+    <div class="back-bar-container">
+        <a href="index.html#gameproject" class="back-to-portfolio-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+            BACK TO GAME PROJECTS
+        </a>
+    </div>
+
+    <!-- Game Showcase Hero Banner -->
+    <header class="game-hero-banner" style="background-image: url('PIC%20BABY/BABY%20cover2.png');">
+        <div class="game-hero-banner-overlay"></div>
+        <div class="game-hero-overlay-content">
+            <h1 class="game-title-main">BABY MAYBE CRY</h1>
+            <div class="game-year-range">HORROR / STRATEGY / SURVIVAL</div>
+            <div style="display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap; margin-top: 0.4rem;">
+                <a href="https://windmiii.itch.io/babymaybecry" target="_blank" rel="noopener noreferrer" class="game-hero-play-btn">
+                    PLAY ON ITCH.IO ↗
+                </a>
+                <a href="https://www.canva.com/design/DAG5h5H7078/9ihpSSWuqfX7LWniyg45Aw/edit" target="_blank" rel="noopener noreferrer" class="game-hero-gdd-btn">
+                    📄 VIEW GDD (CANVA) ↗
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Navigation Bar (3 Sections Only) -->
+    <nav class="game-page-subnav" aria-label="Project Sub Navigation">
+        <div class="subnav-container">
+            <ul class="subnav-links">
+                <li><a href="#overview" class="active">OVERVIEW</a></li>
+                <li><a href="#game-design">GAME DESIGN</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Deep Dive Main Content Area -->
+    <main class="detail-content-area">
+
+        <!-- ================= SECTION 1: OVERVIEW ================= -->
+        <section class="deepdive-section" id="overview">
+            <div class="deepdive-container">
+                <div class="deepdive-header">
+                    <div class="deepdive-title-group">
+                        <span class="deepdive-subtitle">PROJECT SUMMARY & STORY</span>
+                        <h2 class="deepdive-title">Overview</h2>
+                    </div>
+                </div>
+
+                <div class="deepdive-grid">
+                    <div class="deepdive-text">
+                        <p>
+                            <strong>Game Vision:</strong> ประสบการณ์ความน่ากลัวจากปีศาจในวัยเด็ก
+                        </p>
+
+                        <p>
+                            <strong>Concept & Story:</strong> เด็กน้อยตื่นขึ้นมากลางดึกแล้วพบประตูมิติลึกลับเปิดออก ซึ่งควรจะเป็นโถงทางเดินปกติ แต่กลับนำพาไปสู่โถงบ้านประหลาดที่ไม่คุ้นเคย
+                        </p>
+
+                        <p>
+                            <strong>Core Objective:</strong> ผู้เล่นต้องสำรวจบ้าน ตามหาห้องเป้าหมาย และขนย้ายสิ่งของตามเงื่อนไขไปส่งยังห้องเป้าหมายเพื่อสะสมแต้มปลดล็อกประตูทางหนีออกจากบ้านผีสิง
+                        </p>
+
+                        <div class="detail-callout" style="margin-top: 1.5rem; margin-bottom: 0;">
+                            <strong>Project Summary</strong>
+                            <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+                                <li><strong>Game Title:</strong> BABY MAYBE CRY</li>
+                                <li><strong>Genre:</strong> Horror / Strategy / Survival</li>
+                                <li><strong>Platform:</strong> PC</li>
+                                <li><strong>Target Audience:</strong> ผู้เล่นสาย PC</li>
+                                <li><strong>Play Game:</strong> <a href="https://windmiii.itch.io/babymaybecry" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline; font-weight: 600;">windmiii.itch.io/babymaybecry ↗</a></li>
+                                <li><strong>Game Design Document:</strong> <a href="https://www.canva.com/design/DAG5h5H7078/9ihpSSWuqfX7LWniyg45Aw/edit" target="_blank" rel="noopener noreferrer" style="color: #c084fc; text-decoration: underline; font-weight: 600;">BABY MAYBE CRY GDD (Canva Design) ↗</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="deepdive-media-col">
+                        <div class="deepdive-media-card">
+                            <img src="PIC%20BABY/ROOM%201.png" alt="Baby Maybe Cry Room 1 Dining Hall Scene">
+                        </div>
+                        <div class="deepdive-media-card">
+                            <img src="PIC%20BABY/ROOM2.png" alt="Baby Maybe Cry Living Room Scene">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 2: GAME DESIGN ================= -->
+        <section class="deepdive-section" id="game-design">
+            <div class="deepdive-container">
+                <div class="deepdive-header">
+                    <div class="deepdive-title-group">
+                        <span class="deepdive-subtitle">SYSTEMS & MECHANICS</span>
+                        <h2 class="deepdive-title">Game Design</h2>
+                    </div>
+                </div>
+
+                <!-- GDD Showcase Card / Banner -->
+                <div class="detail-callout" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.2rem; background: linear-gradient(135deg, rgba(0, 196, 204, 0.12) 0%, rgba(125, 42, 232, 0.15) 100%); border-left: 4px solid #7d2ae8; margin-bottom: 2.2rem; padding: 1.2rem 1.6rem; border-radius: var(--radius-sm);">
+                    <div>
+                        <strong style="color: #fff; font-size: 1.05rem; display: flex; align-items: center; gap: 0.5rem;">
+                            📄 Game Design Document (GDD)
+                        </strong>
+                        <p style="margin: 0.35rem 0 0; color: var(--text-muted); font-size: 0.92rem;">
+                            เอกสารการออกแบบเกมฉบับเต็ม (GDD) บน Canva ครอบคลุมทั้ง Game Concept, Player Loop, Demon AI State, และ Floor Plan Architecture
+                        </p>
+                    </div>
+                    <a href="https://www.canva.com/design/DAG5h5H7078/9ihpSSWuqfX7LWniyg45Aw/edit" target="_blank" rel="noopener noreferrer" class="game-hero-gdd-btn" style="margin-top: 0; white-space: nowrap;">
+                        เปิดดูเอกสาร GDD (Canva) ↗
+                    </a>
+                </div>
+
+                <!-- Core Loop Header & Process Flow -->
+                <h3 style="color: var(--accent); font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 1.2rem; letter-spacing: 1px;">
+                    CORE LOOP
+                </h3>
+
+                <div class="process-steps-container">
+                    <div class="process-step-item">
+                        <div class="process-step-num">1</div>
+                        <div class="process-step-content">
+                            <h4 class="process-step-title">Spawn & Explore</h4>
+                            <p class="process-step-desc">
+                                ผู้เล่นเริ่มต้นเกิดในพื้นที่ปลอดภัย และเริ่มออกสำรวจโถงบ้านและห้องต่างๆ ที่เต็มไปด้วยความมืดและความลึกลับ
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-item">
+                        <div class="process-step-num">2</div>
+                        <div class="process-step-content">
+                            <h4 class="process-step-title">Locate Target Room</h4>
+                            <p class="process-step-desc">
+                                ค้นหาตำแหน่งของห้องเป้าหมายหลักที่มีประตูมิติลึกลับ เพื่อใช้เป็นจุดหมายในการส่งมอบสิ่งของ
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-item">
+                        <div class="process-step-num">3</div>
+                        <div class="process-step-content">
+                            <h4 class="process-step-title">Scavenge & Deliver Items</h4>
+                            <p class="process-step-desc">
+                                ตามหาสิ่งของสำคัญตามเงื่อนไขที่กำหนด และทำการขนย้ายสิ่งของเหล่านั้นมาส่งยังห้องเป้าหมายเพื่อสะสมแต้มปลดล็อก
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-item">
+                        <div class="process-step-num">4</div>
+                        <div class="process-step-content">
+                            <h4 class="process-step-title">Defend</h4>
+                            <p class="process-step-desc">
+                                วางแผนตั้งรับและป้องกันการบุกรุกของปีศาจร้าย ไม่ให้เข้ามาทำร้ายผู้เล่นหรือทำลายสิ่งของที่เก็บสะสมไว้
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-item">
+                        <div class="process-step-num">5</div>
+                        <div class="process-step-content">
+                            <h4 class="process-step-title">Escape</h4>
+                            <p class="process-step-desc">
+                                เมื่อส่งสิ่งของครบตามเงื่อนไข ประตูทางออกมิติจะปลดล็อก ผู้เล่นต้องวิ่งฝ่าอันตรายเพื่อหลบหนีออกจากบ้านผีสิงได้สำเร็จ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Mechanics & Systems Grid -->
+                <h3 style="color: var(--accent); font-family: var(--font-heading); font-size: 1.15rem; margin: 3rem 0 1.2rem; letter-spacing: 1px;">
+                    CORE MECHANICS & SYSTEMS
+                </h3>
+
+                <div class="tech-cards-grid">
+                    <!-- Resource & Scavenging System -->
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">Resource & Scavenging System</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            สิ่งของแต่ละชิ้นมี มูลค่า สามารถพังได้ และมีจำนวนจำกัด
+                        </p>
+                    </div>
+
+                    <!-- Enemy Types -->
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">Enemy Types</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            Player-Hunter และ Item-Destroyer
+                        </p>
+                    </div>
+
+                    <!-- Room Locking Strategy -->
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">Room Locking Strategy</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            ผู้เล่นสามารถเลือกล็อกห้องเป้าหมายได้สูงสุด 2 ครั้งต่อเกม เพื่อสกัดไม่ให้ปีศาจบุกเข้ามาทำลายสิ่งของที่สะสมไว้ด้านใน
+                        </p>
+                    </div>
+
+                    <!-- Weapons -->
+                    <div class="tech-feature-card">
+                        <div class="tech-card-header">
+                            <h3 class="tech-card-title">Weapons</h3>
+                        </div>
+                        <p class="tech-card-desc">
+                            Melee &emsp; Ranged &emsp; Traps
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Level Design & Map Layout -->
+                <h3 style="color: var(--accent); font-family: var(--font-heading); font-size: 1.15rem; margin: 3rem 0 1.2rem; letter-spacing: 1px;">
+                    LEVEL DESIGN & MAP LAYOUT
+                </h3>
+
+                <div class="level-design-grid-2x2">
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAP1.png" alt="Map 1 Prototype Layout">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAP2.png" alt="Map 2 Full House Floor Plan">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAPTEST1.png" alt="Map Test 1 Scene Blockout">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/ขั้นตอนการออกแบบ%20BABY1.png" alt="ขั้นตอนการออกแบบ BABY1 NavMesh Layout">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 3: GALLERY ================= -->
+        <section class="deepdive-section" id="gallery">
+            <div class="deepdive-container">
+                <div class="deepdive-header">
+                    <div class="deepdive-title-group">
+                        <span class="deepdive-subtitle">VISUAL SHOWCASE</span>
+                        <h2 class="deepdive-title">GALLERY</h2>
+                    </div>
+                </div>
+
+                <!-- Pure Image Grid (Only Pictures, No Descriptions) -->
+                <div class="tech-cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/ROOM%201.png" alt="Baby Maybe Cry Environment Image">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/ROOM2.png" alt="Baby Maybe Cry Environment Image">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/ROOM%204.png" alt="Baby Maybe Cry Room 4 Image">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAP2%20ROOM9.png" alt="Baby Maybe Cry Map 2 Room 9 Image">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAP2%20ROOM8.png" alt="Baby Maybe Cry Map 2 Room 8 Image">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAP2%20ROOM7.png" alt="Baby Maybe Cry Cauldron Room Image">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAP2%20ROOM4.png" alt="Baby Maybe Cry Bathroom Image">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAP2%20ROOM3.png" alt="Baby Maybe Cry Bedroom Image">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAP2%20ROOM2.png" alt="Baby Maybe Cry Hallway Image">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAP2%20ROOM6.png" alt="Baby Maybe Cry Living Room Image">
+                    </div>
+                    <div class="deepdive-media-card">
+                        <img src="PIC%20BABY/MAP2%20ROOM1.png" alt="Baby Maybe Cry Storage Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Project Next / Previous Navigation Bar -->
+    <aside class="project-nav-bar" aria-label="Game Project Navigation">
+        <a href="game-rocket-diff.html" class="project-nav-link prev-link">
+            <div class="nav-arrow">←</div>
+            <div class="nav-link-meta">
+                <span class="nav-link-label">Previous Game</span>
+                <span class="nav-link-title">Rocket Diff (Space 2D)</span>
+            </div>
+        </a>
+        <a href="index.html#gameproject" class="project-nav-link next-link">
+            <div class="nav-arrow">→</div>
+            <div class="nav-link-meta">
+                <span class="nav-link-label">Next Project (Coming Soon)</span>
+                <span class="nav-link-title">FISHHHHHH!</span>
+            </div>
+        </a>
+    </aside>
+
+    <!-- Footer & Contact Section -->
+    <footer class="contact-container" id="contact">
+        <h3 class="section-title">CONNECT WITH ME</h3>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Interested in collaborating or hiring for 3D Art & Game Design?</p>
+
+        <div class="contact-button-container">
+            <a href="mailto:nutt2546@hotmail.com" class="contact-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg>
+                <div class="contact-text">
+                    <strong>Email</strong>
+                    <span>nutt2546@hotmail.com</span>
+                </div>
+            </a>
+            <a href="index.html#gameproject" class="contact-button">
+                <div class="contact-text">
+                    <strong>All Game Projects</strong>
+                    <span>Back to Portfolio Showcase</span>
+                </div>
+            </a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">© 2025 Nutt Chinsakonthanagorn • 3D Artist & Game Designer</p>
+    </footer>
+
+    <!-- Lightbox Video / Image Modal -->
+    <div class="modal-overlay" id="lightbox-modal">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modal-close">&times;</button>
+            <div class="modal-media-wrapper" id="modal-media"></div>
+            <div class="modal-body">
+                <span class="modal-category-tag" id="modal-category">GAME DEMO</span>
+                <h2 class="modal-title" id="modal-title">Project Video</h2>
+                <p class="modal-description" id="modal-description">Video breakdown</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
